@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Eczar';
+  src: url('./fonts/Eczar-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", "sans-serif"
+}
+
+#background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #1A8AFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239f69ff'/%3E%3Cstop offset='1' stop-color='%239f69ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2370c3d1'/%3E%3Cstop offset='1' stop-color='%2370c3d1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23c8aad1'/%3E%3Cstop offset='1' stop-color='%23c8aad1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231A8AFF'/%3E%3Cstop offset='1' stop-color='%231A8AFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23E117FF'/%3E%3Cstop offset='1' stop-color='%23E117FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237DFF9B'/%3E%3Cstop offset='1' stop-color='%237DFF9B' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -2147483647;
+}
+
+.glass{
+  background-color: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.upload-section{
+  position: fixed;
+  bottom: 50px;
+  right:50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-screen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card-section{
+  display: flex;
+  flex-direction: column;
+  height:65%;
+  width: 40%;
+  align-items: center;
+  text-align: center;
+}
+
+.title{
+  font-size: xx-large;
+  margin: 20px;
+  text-decoration: underline;
+}
+
+.subtitle{
+  font-size: x-large;
+  margin: 15px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.text{
+  font-size: large;
+  text-align: center;
+}
+
+.btn{
+  margin: 20px;
+}
+
+.red{
+  color: red;
+}
+
+.green{
+  color: green;
+}
+
+.stat-section{
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
