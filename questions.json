@@ -1,0 +1,82 @@
+{
+    "0": {
+        "question" : "Music for small ensemble (2-10) people one player per part, no conductor",
+        "answer": "chamber music"
+    },
+    "1": {
+        "question" : "A work with statement of melody followed by a series of transformations often used in the slow movement of sonata cycle",
+        "answer": "theme and variations"
+    },
+    "2": {
+        "question" : "A multi-movement work for soloist(s) and orchestra for virtuosity, generally with a sonata form in movement 1",
+        "answer": "concerto"
+    },
+    "3": {
+        "question" : "Typically movement 1 of a sonata cycle. Exposition, development, recapitulation.",
+        "answer": "sonata form"
+    },
+    "4": {
+        "question" : "A solo passage in concerti, arias, and large orchestral works. Improvisational in style and virtuosic.",
+        "answer": "cadenza"
+    },
+    "5": {
+        "question" : "Instrumental piece, most often for piano based on programmatic elements with evocative title. Sometimes grouped into cycles",
+        "answer": "character piece"
+    },
+    "6": {
+        "question" : "Musical setting of a German poem for solo voice and piano accompaniment",
+        "answer": "Lied"
+    },
+    "7": {
+        "question" : "A song structure with some repetition of music",
+        "answer": "modified strophic form"
+    },
+    "8": {
+        "question" : "ABACA or ABACABA, often used in sonata cycles",
+        "answer": "rondo form"
+    },
+    "9": {
+        "question" : "A study, solo instrumental work focusing on one or more technical challenges",
+        "answer": "etude"
+    },
+    "10": {
+        "question" : "A drama that is sung. Vocal and instrumental music and drama and visual arts and dance.",
+        "answer": "opera"
+    }, 
+    "11": {
+        "question" : "beautiful singing, emphazies by purity of tone and lyrical melodies",
+        "answer": "bel canto"
+    },
+    "12": {
+        "question" : "The text of an opera, oratorio, or cantata.",
+        "answer": "libretto"
+    },
+    "13": {
+        "question" : "speech-like style of singing used to advance plot",
+        "answer": "recitative"
+    },
+    "14": {
+        "question" : "A solo song with orchestral accompaniment, highly emotional, virtuosic",
+        "answer": "aria"
+    },
+    "15": {
+        "question" : "Wagner's synthesis of music and drama, differentiating from traditional operas",
+        "answer": "music drama"
+    },
+    "16": {
+        "question" : "A musical part that plays to represent a character, setting, etc",
+        "answer": "Leitmotif"
+    },
+    "17": {
+        "question" : "Total art work combining text, music, and stagecraft",
+        "answer": "Gesamtkunstwerk"
+    },
+    "18": {
+        "question" : "Music with extramusical associations and a descriptive title",
+        "answer": "program music"
+    },
+    "19": {
+        "question" : "A single movement orchestral work usually in sonata form, separate from the opera or ballet",
+        "answer": "concert overture"
+    }
+}
