@@ -43,6 +43,11 @@ function App() {
         newQuestions.push(jsonData[i]);
       }
 
+      for (let i = newQuestions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [newQuestions[i], newQuestions[j]] = [newQuestions[j], newQuestions[i]];
+      }
+
       setQuestions(newQuestions);
       setCorrect(0);
       setWrong(0);
@@ -52,7 +57,7 @@ function App() {
   };
 
   const nextProblem = () => {
-    var ind = Math.round(Math.random() * (questions.length - 1));
+    var ind = (correct+wrong) > questions.length ? Math.round(Math.random() * (questions.length - 1)) : correct+wrong;
 
     setQuestion(questions[ind]['question']);
     setAns(questions[ind]['answer']);

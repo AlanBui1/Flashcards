@@ -78,5 +78,113 @@
     "19": {
         "question" : "A single movement orchestral work usually in sonata form, separate from the opera or ballet",
         "answer": "concert overture"
+    },
+    "20": {
+        "question" : "French style with blurring of metric pulse, non-traditional scales, and often programmatic",
+        "answer": "impressionism in music"
+    },
+    "21": {
+        "question" : "German style with extreme dissonance and irregular rhythmic groupings",
+        "answer": "expressionism in music"
+    },
+    "22": {
+        "question" : "A lack of tonal center, no sense of key",
+        "answer": "atonality"
+    },
+    "23": {
+        "question" : "Synonymous with 12-tone-music. Parameters (rhythm, pitch, dynamics) organized with specific ordering and manipulated",
+        "answer": "serialism"
+    },
+    "24": {
+        "question" : "Composers add randomness to their scores/performances by allowing the performer to choose parameters",
+        "answer": "indeterminary"
+    },
+    "25": {
+        "question" : "Repetition of short melodic, rhyhtmic, harmonic patterns with little variation",
+        "answer": "minimalism in music"
+    },
+    "26": {
+        "question" : "A return to absolute music and traditional forms",
+        "answer": "neo-Classicism"
+    },
+    "27": {
+        "question" : "Real-time markings on score. Visually descriptive and different notation.",
+        "answer": "graphic notation"
+    },
+    "28": {
+        "question" : "multi-movement orchestral work, 4 movements, at least one sonata form",
+        "answer": "symphony"
+    },
+    "29": {
+        "question" : "Material from one movement appears in another movement for structural unity",
+        "answer": "cyclical structure"
+    },
+    "30": {
+        "question" : "scale with 5 different pitches",
+        "answer": "pentatonic scale"
+    },
+    "31": {
+        "question" : "scale with 6 different pitches separated by whole step",
+        "answer": "whole-tone scale"
+    },
+    "32": {
+        "question" : "The basis of 12-tone compositions. Tone row is manipulated.",
+        "answer": "tone row"
+    },
+    "33": {
+        "question" : "Rewriting with intervals flipped",
+        "answer": "inversion"
+    },
+    "34": {
+        "question" : "Rewriting melody backwards",
+        "answer": "retrograde"
+    },
+    "35": {
+        "question" : "Based on order of 12 chromatic pitches to organize atonal music",
+        "answer": "12-tone music"
+    },
+    "36": {
+        "question" : "Trio of Arnold Schoenberg, Anton Webern, Alban Berg who developed 12-tone music",
+        "answer": "Second Viennese School"
+    },
+    "37": {
+        "question" : "A chord made of major and minor seconds",
+        "answer": "cluster chord"
+    },
+    "38": {
+        "question" : "Simultaneously using more than one key",
+        "answer": "polytonality"
+    },
+    "39": {
+        "question" : "The art of designing dance steps/movements",
+        "answer": "choreography"
+    },
+    "40": {
+        "question" : "Highly stylized type of dance that interprets a story",
+        "answer": "ballet"
+    },
+    "41": {
+        "question" : "A group of orchestral movements from larger dramatic works played in a concert setting",
+        "answer": "orchestral suite"
+    },
+    "42": {
+        "question" : "Any scale that can only be transposed once",
+        "answer": "mode of limited transposition"
+    },
+    "43": {
+        "question" : "Many separate melodic strands weaved together",
+        "answer": "micropolyphony"
+    },
+    "44": {
+        "question" : "Produced on a string instrument by depressing at specific points",
+        "answer": "harmonics"
+    },
+    "45": {
+        "question" : "A loud ceremonial piece played on important occasions",
+        "answer": "fanfare"
+    },
+    "46": {
+        "question" : "Inserting objects in between strings to make different sounds",
+        "answer": "prepared piano"
     }
 }
