@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 import './App.css';
 
 function App() {
+  const [curScreen, setCurScreen] = useState('Home');
   const [selectedFile, setSelectedFile] = useState(null);
   const [questions, setQuestions] = useState([]);
   const [text, setText] = useState('');
@@ -11,6 +12,40 @@ function App() {
   const [question, setQuestion] = useState('Upload file to start');
   const [correct, setCorrect] = useState(0);
   const [wrong, setWrong] = useState(0);
+
+  const [time, setTime] = useState(0);
+  const [isRunning, setIsRunning] = useState(false);
+  const intervalRef = useRef();
+
+  const [times, setTimes] = useState([]);
+  const [answers, setAnswers] = useState([]);
+
+  const changeScreen = () => {
+    if (curScreen === 'Home'){
+      setCurScreen('Stats');
+    }
+    else{
+      setCurScreen('Home');
+    }
+  }
+
+  const startStopwatch = () => {
+    if (!isRunning) {
+      setIsRunning(true);
+      intervalRef.current = setInterval(() => {
+        setTime(prevTime => prevTime + 1);
+      }, 1000);
+    } else {
+      clearInterval(intervalRef.current);
+      setIsRunning(false);
+    }
+  };
+
+  const resetStopwatch = () => {
+    clearInterval(intervalRef.current);
+    setIsRunning(false);
+    setTime(0);
+  };
 
   const textChange = (event) => {
     setText(event.target.value);
@@ -22,6 +57,14 @@ function App() {
 
   const setReveal = () => {
     setShow(true);
+    const newAnswers = [...answers];
+    newAnswers.push(text);
+    setAnswers(newAnswers);
+
+    const newTimes = [...times];
+    newTimes.push(time);
+    setTimes(newTimes);
+
     if (ans === text){
       setCorrect(correct+1);
     }
@@ -51,13 +94,15 @@ function App() {
       setQuestions(newQuestions);
       setCorrect(0);
       setWrong(0);
+      setAnswers([]);
+      setTimes([]);
     };
 
     reader.readAsText(selectedFile);
   };
 
   const nextProblem = () => {
-    var ind = (correct+wrong) > questions.length ? Math.round(Math.random() * (questions.length - 1)) : correct+wrong;
+    var ind = (correct+wrong) >= questions.length ? Math.round(Math.random() * (questions.length - 1)) : correct+wrong;
 
     setQuestion(questions[ind]['question']);
     setAns(questions[ind]['answer']);
@@ -84,7 +129,6 @@ function App() {
   function Main(){
     return (
       <div>
-        <div id='background'></div>
         <div class='full-screen'>
           <div class='card-section glass'>
             <div>
@@ -140,13 +184,38 @@ function App() {
             {correct+ '  |  ' +wrong}
           </h1>
         </div>
+        <div class='timer-section glass'>
+          <p>{time} seconds</p>
+          <div>
+          <button class='glass' onClick={startStopwatch}>{isRunning ? 'Stop' : 'Start'}</button>
+          <button class='glass' onClick={resetStopwatch}>Reset</button>
+          </div>
+        </div>
+
         
+      </div>
+    );
+  }
+
+  function Stats(){
+    return (
+      <div class='stats-section'>
+        {answers.map((item, index) => (
+          <div className='glass'>
+            <h2 class='question'>{questions[index]['question']}</h2>
+            <h3>{'The answer: '+questions[index]['answer']}</h3>
+            <h3 class={questions[index]['answer'] === item ? 'green' : 'red'}>{'You answer: '+ item}</h3>
+            <h3>{'Time took: '+ (index === 0 ? times[index] : times[index] - times[index-1])}</h3>
+          </div>
+        ))}
       </div>
     );
   }
   return (
     <>
-      {Main()}
+      <div id='background'></div>
+      {curScreen === 'Home' ? Main() : Stats()}
+      <button class='glass btn' onClick={changeScreen}>{curScreen} </button>
     </>
     
   );

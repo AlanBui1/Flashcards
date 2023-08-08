@@ -103,3 +103,25 @@
   align-items: center;
   justify-content: center;
 }
+
+.timer-section{
+  position: fixed;
+  bottom: 50px;
+  left: 150px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.stats-section{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.question{
+  margin: 0 0 5px;
+}
